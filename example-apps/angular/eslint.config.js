@@ -2,8 +2,8 @@
 const eslint = require("@eslint/js");
 const tseslint = require("typescript-eslint");
 const angular = require("angular-eslint");
-  
-module.exports = tseslint.config(
+
+const config = tseslint.config(
   {
     files: ["**/*.ts"],
     extends: [
@@ -40,4 +40,6 @@ module.exports = tseslint.config(
     ],
     rules: {},
   }
-);
+)
+
+module.exports = config

@@ -1,0 +1,37 @@
+{
+    "name": "@maks-dolgikh/eslint-summary",
+    "version": "0.0.1-alpha",
+    "description": "Analyzer of current eslint configs in the repository",
+    "readme": "README.md",
+    "keywords": [
+        "eslint",
+        "report",
+        "eslint-reporter",
+        "eslint rules"
+    ],
+    "author": {
+        "name": "Maks Dolgikh",
+        "email": "ge.dolgih.m1996@gmail.com",
+        "url": "https://www.linkedin.com/in/max-dolgikh/"
+    },
+    "license": "MIT",
+    "bin": {
+        "eslint-summary": "./bin/index.js"
+    },
+    "main": "./src/index.js",
+    "exports": {
+        ".": "./src/index.js",
+        "./package.json": "./package.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Misterion96/eslint-summary.git"
+    },
+    "dependencies": {
+        "read-config-file": "6.4.0"
+    },
+    "peerDependencies": {
+        "eslint": "^8"
+    },
+    "private": true
+}
