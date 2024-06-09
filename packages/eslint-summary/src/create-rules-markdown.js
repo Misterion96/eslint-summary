@@ -144,7 +144,7 @@ function prepareAnchor(pluginName) {
  * @returns {string|null} The prepared options.
  */
 function prepareRuleOptions(options) {
-    return options ? JSON.stringify(options) : null;
+    return options ? JSON.stringify(options).replace(/\|/gi, '\\|') : null;
 }
 
 /**

@@ -31,7 +31,8 @@ async function readConfigFile() {
 
         return result;
     } catch (e) {
-        console.warn(e);
+        console.warn('The .eslint-summary configuration was not found. Default settings are used');
+        // console.warn(e);
         return {};
     }
 }

@@ -1,5 +1,5 @@
 {
-    "name": "@maks-dolgikh/eslint-summary",
+    "name": "@dolgikh-maks/eslint-summary",
     "version": "0.0.1-alpha",
     "description": "Analyzer of current eslint configs in the repository",
     "readme": "README.md",
@@ -7,7 +7,9 @@
         "eslint",
         "report",
         "eslint-reporter",
-        "eslint rules"
+        "eslint rules",
+        "summary",
+        "eslint summary"
     ],
     "author": {
         "name": "Maks Dolgikh",
@@ -18,6 +20,7 @@
     "bin": {
         "eslint-summary": "./bin/index.js"
     },
+    "types": "index.d.ts",
     "main": "./src/index.js",
     "exports": {
         ".": "./src/index.js",
@@ -27,11 +30,14 @@
         "type": "git",
         "url": "https://github.com/Misterion96/eslint-summary.git"
     },
+    "scripts": {
+        "postinstall": "node ./src/eslint-api/hack-eslint-package-json.js"
+    },
     "dependencies": {
         "read-config-file": "6.4.0"
     },
     "peerDependencies": {
-        "eslint": "^8"
+        "eslint": "<8.57.0"
     },
-    "private": true
+    "private": false
 }

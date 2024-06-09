@@ -1,3 +1,6 @@
+/**
+ * @type {import('eslint-summary').EslintSummaryConfig}
+ */
 module.exports = {
     extensions: [
         'ts',

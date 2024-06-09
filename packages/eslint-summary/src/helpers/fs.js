@@ -79,7 +79,8 @@ async function createResultDoc(configRelativePath, markdown, outputPath = '.') {
         await fs.mkdir(outputPath, { recursive: true });
     }
 
-    return createFile(path.join(outputPath, `${configRelativePath}.md`), markdown);
+    const fileNameWithOutExtension = configRelativePath.slice(0, configRelativePath.lastIndexOf('.'))
+    return createFile(path.join(outputPath, `${fileNameWithOutExtension}.md`), markdown);
 }
 
 module.exports = {

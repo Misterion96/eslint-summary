@@ -25,7 +25,6 @@ const config = {
  * @returns {Object} An instance of CLIEngine.
  */
 function createCliEngine(configFile, extension) {
-    require('./hack-eslint-package-json')();
     const { CLIEngine } = require('eslint/cli-engine');
 
     return new CLIEngine({
