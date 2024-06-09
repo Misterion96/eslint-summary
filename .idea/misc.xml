@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MarkdownSettings">
+    <option name="customStylesheetText" value=".message {&#10;  color: black;&#10;  font-weight: 400;&#10;  font-size: 13px;&#10;  line-height: 20px;&#10;  position: relative;&#10;  padding: 13px 16px 11px;&#10;  border-radius: 4px;&#10;  overflow: hidden;&#10;  margin: 10px 0;&#10;  background: #e8e8e8;&#10;  text-overflow: ellipsis;&#10;  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;&#10;}&#10;.message.success {&#10;  background: #e0f6e5;&#10;}&#10;.message.success::after {&#10;  background: #01b92d;&#10;}&#10;.message.info {&#10;  background: #e8f1f3;&#10;}&#10;.message.info::after {&#10;  background: #428bf9;&#10;}&#10;&#10;.message.error {&#10;  background: #fbe4e3;&#10;}&#10;.message.error::after {&#10;  background: #f22221;&#10;}&#10;.message.warning {&#10;  background: #fef6e3;&#10;}&#10;.message.warning::after {&#10;  background: #fab629;&#10;}&#10;&#10;.message::after {&#10;  content: '';&#10;  position: absolute;&#10;  left: 0;&#10;  top: 0;&#10;  bottom: 0;&#10;  width: 4px;&#10;  pointer-events: none;&#10;  background: grey;&#10;}&#10;" />
+    <enabledExtensions>
+      <entry key="MermaidLanguageExtension" value="false" />
+      <entry key="PlantUMLLanguageExtension" value="false" />
+    </enabledExtensions>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+</project>
